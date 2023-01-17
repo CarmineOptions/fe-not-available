@@ -1,0 +1,123 @@
+/* design font size is 24px for vw 1920px */
+
+:root {
+  font-size: 1.25vw;
+  font-family: "Poppins", sans-serif;
+  --primary: #ffb000;
+  --white: #ffffff;
+  --dark-grey: #181920;
+  --light-grey: #393946;
+  --medium-grey: #9b9b9b;
+  --bg-primary: #070718;
+  --bg-secondary: #060623;
+}
+
+* {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-primary);
+  color: var(--white);
+}
+
+main {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-flow: column;
+  text-align: center;
+}
+
+.container > * {
+  padding: 0 10vw;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 3.2rem;
+  height: 3.625rem;
+}
+
+.logo-text {
+  font-size: 1.66rem;
+  margin: 0 0.83rem;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#hero-image {
+  width: 100%;
+  height: auto;
+}
+
+#hero h1 {
+  font-size: 2.66rem;
+  color: var(--primary);
+}
+
+#hero p {
+  font-size: 2rem;
+}
+
+.title-holder {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-pipe {
+  width: 0.125rem;
+  margin-right: 0.458rem;
+}
+
+.title-dot {
+  width: 0.5rem;
+  margin-left: 0.292rem;
+  margin-top: 1.5rem;
+}
+
+.title {
+  font-size: 2.666rem;
+}
+
+.flex-container > div {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+  :root {
+    font-size: 16px;
+  }
+
+  .logo-wrapper {
+    padding: 0.8rem;
+  }
+  .container > * {
+    padding: 0 20px;
+  }
+}
